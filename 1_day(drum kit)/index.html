@@ -71,7 +71,7 @@ function removeTransition(e) {  //이팩트 삭제해주는 함수
     if (!audio) return; //소리가 없으면 X
 
     key.classList.add('playing');
-    audio.currentTime = 0;
+    audio.currentTime = 0;  // 키 재입력 시간 설정(연속적으로 입력 가능하도록)
     audio.play();
 }
 
